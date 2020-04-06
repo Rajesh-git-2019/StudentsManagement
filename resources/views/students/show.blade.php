@@ -20,8 +20,20 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Details:</strong>
-                {{ $student->detail }}
+                <strong>Course:</strong>
+                {{ $student->course }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Fee Paid:</strong>
+                {{ $student->Fee_Paid }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Fee Due:</strong>
+                {{ $student->Fee_Due }}
             </div>
         </div>
     </div>

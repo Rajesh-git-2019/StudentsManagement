@@ -34,8 +34,20 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
+                    <strong>Course:</strong>
+                    <input class="form-control"  name="course" placeholder="Course"></input>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Fee Paid:</strong>
+                    <input class="form-control" name="fee_paid" placeholder="Amount Paid"></input>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Fee Due:</strong>
+                    <input class="form-control"  name="fee_due" placeholder="Amount Due"></input>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -57,6 +57,12 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}">
+                                        {{ __('Admin Roles') }}
+                                    </a>
+                                <a class="dropdown-item" href="{{ route('logout') }}">
+                                        {{ __('Setting') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -79,4 +85,15 @@
         </main>
     </div>
 </body>
+<!-- Footer -->
+<footer class="page-footer font-small white bg-primary">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" >© 2020 Copyright:
+    <a href="https://github.com/Rajesh-git-2019/StudentsManagement" style="color:black;"> Rajesh Kondapalli</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </html>

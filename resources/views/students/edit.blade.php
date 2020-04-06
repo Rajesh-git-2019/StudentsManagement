@@ -35,8 +35,20 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $student->detail }}</textarea>
+                    <strong>Course:</strong>
+                    <textarea class="form-control" name="course" placeholder="Detail">{{ $student->course }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Amount Paid:</strong>
+                    <textarea class="form-control" name="fee_paid" placeholder="Paid Amount">{{ $student->fee_paid }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Amount Due:</strong>
+                    <textarea class="form-control" name="fee_due" placeholder="Due Amount">{{ $student->fee_due }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

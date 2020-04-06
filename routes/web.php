@@ -16,8 +16,7 @@
 Route::get('/', function () {
     return redirect('/students');
 });
-
-Route::resource('students','StudentController');
 Auth::routes();
-
+Route::resource('students','StudentController');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/payment', 'PaymentController@index')->name('payment');

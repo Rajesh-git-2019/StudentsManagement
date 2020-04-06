@@ -17,8 +17,8 @@
                     You are logged in!
                     <br>
                     <br>
-                    <button class="navbar-brand btn-outline-success" href="{{ url('/') }}">
-                    View Students Profile
+                    <button class="navbar-brand btn-outline-success" href="{{ url('http://127.0.0.1:8000/') }}">
+                        View Students Profile
                     </button>
                 </div>
             </div>

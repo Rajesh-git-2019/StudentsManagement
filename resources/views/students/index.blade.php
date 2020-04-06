@@ -22,19 +22,23 @@
     @if(sizeof($students) > 0)
         <table class="table table-bordered">
             <tr>
-                <th>No</th>
+                <th>No.</th>
                 <th>Name</th>
-                <th>Details</th>
+                <th>Course</th>
+                <th>Amount Paid</th>
+                <th>Amount Due</th>
                 <th width="280px">More</th>
             </tr>
             @foreach ($students as $student)
                 <tr>
                     <td>{{ ++$i }}</td>
                     <td>{{ $student->name }}</td>
-                    <td>{{ $student->detail }}</td>
+                    <td>{{ $student->course }}</td>
+                    <td>{{ $student->Fee_Paid }}</td>
+                    <td>{{ $student->Fee_Due }}</td>
                     <td>
                         <form action="{{ route('students.destroy',$student->id) }}" method="POST">
-
+                            <a class="btn btn-warning" href="{{ route('payment',$student->id) }}">Pay</a>
                             <a class="btn btn-info" href="{{ route('students.show',$student->id) }}">Show</a>
                             <a class="btn btn-primary" href="{{ route('students.edit',$student->id) }}">Edit</a>
 

@@ -26,8 +26,11 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'name' => ['required','max:255'],
+            'course' => ['required','max:255'],
+            'fee_paid' => 'required|numeric|min:0|max:5',
+            'fee_due' => 'required|numeric|min:0|max:5',
+
         ]);
 
         Student::create($request->all());
@@ -49,7 +52,9 @@ class StudentController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'course' => 'required',
+            'fee_paid' => 'required',
+            'fee_due' => 'required',
         ]);
 
         $student->update($request->all());
